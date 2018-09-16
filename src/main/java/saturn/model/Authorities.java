@@ -37,5 +37,10 @@ public class Authorities implements Serializable{
 	public void setAuthorities(String authorities) { 
 		this.authorities = authorities;
 	}
+	@Override
+	public String toString() {
+		return "Authorities [id=" + id + ", emailId=" + emailId + ", authorities=" + authorities + "]";
+	}
+	
 }
 

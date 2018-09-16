@@ -60,6 +60,12 @@ public class SalesOrder implements Serializable {
 	}
 	public void setBillingAddress(BillingAddress billingAddress) { 
 		this.billingAddress = billingAddress;
+	}
+	@Override
+	public String toString() {
+		return "SalesOrder [id=" + id + ", cart=" + cart + ", customer=" + customer + ", shippingAddress="
+				+ shippingAddress + ", billingAddress=" + billingAddress + "]";
 	} 
+	
 }
 

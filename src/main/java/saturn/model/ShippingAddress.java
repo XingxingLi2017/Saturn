@@ -78,6 +78,13 @@ public class ShippingAddress implements Serializable {
 	
 	public void setCustomer(Customer customer) { 
 		this.customer = customer;
+	}
+
+	@Override
+	public String toString() {
+		return "ShippingAddress [id=" + id + ", address=" + address + ", city=" + city + ", state=" + state
+				+ ", zipcode=" + zipcode + ", country=" + country + ", customer=" + customer + "]";
 	} 
+	
 }
 

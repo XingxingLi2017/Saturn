@@ -54,6 +54,12 @@ public class Cart implements Serializable {
 	}
 	public void setCustomer(Customer customer) { 
 		this.customer = customer;
+	}
+	@Override
+	public String toString() {
+		return "Cart [id=" + id + ", customer=" + customer + ", cartItem=" + cartItem + ", totalPrice=" + totalPrice
+				+ "]";
 	} 
+	
 }
 

@@ -106,6 +106,15 @@ public class Product implements Serializable {
 	
 	public void setProductImage(MultipartFile productImage) { 
 		this.productImage = productImage;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", productCategory=" + productCategory + ", productDescription="
+				+ productDescription + ", productManufacturer=" + productManufacturer + ", productName=" + productName
+				+ ", productPrice=" + productPrice + ", unitStock=" + unitStock + ", productImage=" + productImage
+				+ "]";
 	} 
+	
 }
 
