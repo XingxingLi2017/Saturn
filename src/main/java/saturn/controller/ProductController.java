@@ -67,7 +67,7 @@ public class ProductController {
 		model.addAttribute("productForm", product); 
 		return "addProduct";
 	}
-	
+	// add picture in server
 	@RequestMapping(value = "/admin/product/addProduct", method = RequestMethod.POST)
 	public String addProduct(@Valid @ModelAttribute(value="productForm")Product product, BindingResult result) {
 		System.out.println("ProductController.addProduct");
@@ -79,7 +79,7 @@ public class ProductController {
 		// Store picture
 		MultipartFile image = product.getProductImage();
 		if (image != null && !image.isEmpty()) {
-			Path path = Paths.get("/Users/lixingxing/products/"+product.getId()+".jsp");
+			Path path = Paths.get("/Users/lixingxing/products/"+product.getId()+".jpg");
 			try {
 				image.transferTo(new File(path.toString()));
 			} catch (Exception e) {

@@ -13,20 +13,28 @@ public class ProductServiceImpl implements ProductService {
 	@Autowired
 	private ProductDao productDao;
 	public List<Product> getAllProducts() {
-		return null;
+		System.out.println("ProductServiceImpl.getAllProducts");
+		return productDao.getAllProducts();
 	}
 
 	public Product getProductById(int productId) {
-		return null;
+		System.out.println("ProductServiceImpl.getProductById");
+		return productDao.getProductById(productId);
 	}
 
 	public void deleteProduct(int productId) {
+		System.out.println("ProductServiceImpl.deleteProduct");
+		productDao.deleteProduct(productId);
 	}
 
 	public void addProduct(Product product) {
+		System.out.println("ProductServiceImpl.addProduct");
+		productDao.addProduct(product);
 	}
 
 	public void updateProduct(Product product) {
+		System.out.println("ProductServiceImpl.updateProduct");
+		productDao.updateProduct(product);
 	}
 
 }

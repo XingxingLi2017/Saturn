@@ -48,6 +48,7 @@ public class CustomerDaoImpl implements CustomerDao {
 		
 	}
 
+	@SuppressWarnings("deprecation")
 	public Customer getCustomerByUserName(String userName) {
 		System.out.println("CustomerDaoImpl.getCustomerByUserName");
 		
