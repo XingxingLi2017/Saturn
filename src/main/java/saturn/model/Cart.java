@@ -23,7 +23,8 @@ public class Cart implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO) 
 	private int id;
-	@OneToOne(mappedBy = "cart") @JsonIgnore
+	@OneToOne(mappedBy = "cart") 
+	@JsonIgnore
 	private Customer customer;
 	
 	@OneToMany(mappedBy = "cart", cascade = CascadeType.ALL,fetch=FetchType.EAGER)

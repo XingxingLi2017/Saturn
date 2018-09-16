@@ -19,7 +19,7 @@ public class CustomerDaoImpl implements CustomerDao {
 	public void addCustomer(Customer customer) {
 		System.out.println("CustomerDaoImpl.addCustomer");
 		customer.getUser().setEnabled(true);
-		// set new register customer role
+		// set new register customer role as ROLE_USER
 		Authorities authorities = new Authorities();
 		authorities.setAuthorities("ROLE_USER");
 		authorities.setEmailId(customer.getUser().getEmailId());

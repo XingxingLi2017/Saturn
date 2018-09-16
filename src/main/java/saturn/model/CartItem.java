@@ -18,13 +18,14 @@ public class CartItem implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
-	private int quantity; private double price;
+	private int quantity; 
+	private double price;
 	
 	@OneToOne
 	private Product product;
 	
-	@ManyToOne @JsonIgnore private 
-	Cart cart;
+	@ManyToOne @JsonIgnore 
+	private Cart cart;
 	
 	public int getId() { 
 		return id;

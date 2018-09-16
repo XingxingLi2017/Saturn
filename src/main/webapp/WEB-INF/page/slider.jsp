@@ -12,6 +12,7 @@
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resource/css/overall.css"/>">
 <script type="text/javascript">
+	/* Used for ad system */
 	function getImgSource() {
 		var xhttp = new XMLHttpRequest();
 		var url = "http://localhost:8080/AdsSystem/Ad";
@@ -43,7 +44,8 @@
 <body>
 	<!-- Slider -->
 	<div class="jumbotron">
-		<div id="imgDiv" class = "left"></div>
+		<div id="imgDiv" class = "left">
+		</div>
 		<div class="container">
 			<br>
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
