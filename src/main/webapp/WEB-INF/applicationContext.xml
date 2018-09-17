@@ -43,7 +43,6 @@
 				users-by-username-query="SELECT
 				emailId, password, enabled FROM users WHERE emailId=? " />
 		</security:authentication-provider>
-
 	</security:authentication-manager>
 
 	<webflow-config:flow-executor
@@ -53,7 +52,8 @@
 	<webflow-config:flow-registry
 		id="flowRegistry" base-path="/WEB-INF/flow">
 		<webflow-config:flow-location
-			path="/checkout/checkout-flow.xml" id="checkout"></webflow-config:flow-location>
+			path="/checkout/checkout-flow.xml" id="checkout">
+		</webflow-config:flow-location>
 	</webflow-config:flow-registry>
 
 	<bean id="flowHandleMapping"

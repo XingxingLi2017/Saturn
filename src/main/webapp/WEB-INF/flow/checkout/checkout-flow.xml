@@ -4,7 +4,7 @@
       xsi:schemaLocation="http://www.springframework.org/schema/webflow
 						  http://www.springframework.org/schema/webflow/spring-webflow.xsd">
 
-    <var name="order" class="onlineShop.model.SalesOrder" />
+    <var name="order" class="saturn.model.SalesOrder" />
     
     <action-state id="addCartToOrder">
         <evaluate expression="cartDaoImpl.validate(requestParameters.cartId)" result="order.cart" />

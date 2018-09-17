@@ -73,6 +73,7 @@ public class CartItemController {
 	}
 	
 	@RequestMapping("/cart/removeAllItems/{cartId}")
+	@ResponseStatus(value = HttpStatus.NO_CONTENT)
 	public void removeAllCartItems(@PathVariable(value = "cartId") int cartId) {
 		System.out.println("CartItemController.removeAllCartItems");
 		Cart cart = cartService.getCartById(cartId);
